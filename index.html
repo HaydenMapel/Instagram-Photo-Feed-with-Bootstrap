@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advanced Insta</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/4e0012e680.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand sticky-top navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand text-secondary font-italic font-weight-bold" href="#"><span><i class="fab fa-instagram"></i> Instagram</span></a>
+                <button class="btn btn-success ml-auto mr-1" type="button" data-toggle="modal" data-target="#examplemodal">Create a new post</button>               
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item dropdown  text-secondary">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- tab control for layout change -->
+        <ul class="nav nav-pills m-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active btn-outline-secondary border-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-outline-secondary border-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+            </li>
+        </ul>
+            <div class="container-fluid px-0">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row m-1 ">
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://cdn.pixabay.com/photo/2017/02/24/23/37/old-farm-house-2096642_1280.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://cdn.pixabay.com/photo/2017/03/15/21/17/landscape-2147540_1280.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://cdn.mos.cms.futurecdn.net/yyvvM9kwaVGySFE6aXXoJL-1200-80.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>                 
+                        </div>
+                        <div class="row m-1">
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/starry-night-sky-with-full-moon-arjun-c-mohan.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://media2.giphy.com/media/lS7epgdaqmV9bVzbmX/giphy.gif" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/08/bananas-1354785_1920-1200x800.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>                 
+                        </div>
+                        <div class="row m-1">
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/red-leaf-lettuce-1296x728-feature.jpg?w=1155&h=1528" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries--500x500.jpg" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 px-1 text-center">
+                                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1556744250%2Fthe-ultimate-veggie-sandwich-1905.jpg%3Fitok%3DrAOvFAhQ" class="tab-1 img-fluid" alt="Responsive image">
+                            </div>                 
+                        </div>
+                </div>
+                <!-- second card layout -->
+                
+                <div class="tab-pane fade feed-container container-fluid" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="container-fluid py-5">
+                        <div class="card border-0">
+                                <div class="row p-3">
+                                    <div class="col-6">
+                                    <h5>My First Photo</h5>
+                                    </div>
+                                    <div class="col-6 text-right text-secondary">
+                                    12/4
+                                    </div>
+                                </div>
+                            <div class="card-body p-0">
+                                <img src="https://cdn.pixabay.com/photo/2017/02/24/23/37/old-farm-house-2096642_1280.jpg" class="img-fluid" alt="Barn">
+                                <h5 class="card-title p-3">23 Likes</h5>
+                                <p class="card-text p-3">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#breathcode</strong></p>
+                                <div class="row p-3 text-secondary">
+                                    <div class="col-1 text-center"><i class="far fa-heart"></i></div>
+                                    <div class="col-10">Comment...</div>
+                                    <div class="col-1 text-center"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="container-fluid py-5">
+                        <div class="card border-0">
+                                <div class="row p-3">
+                                    <div class="col-6">
+                                    <h5>My First Photo</h5>
+                                    </div>
+                                    <div class="col-6 text-right text-secondary">
+                                    12/4
+                                    </div>
+                                </div>
+                            <div class="card-body p-0">
+                                <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/red-leaf-lettuce-1296x728-feature.jpg?w=1155&h=1528" class="img-fluid" alt="Lettuce">
+                                <h5 class="card-title p-3">23 Likes</h5>
+                                <p class="card-text p-3">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#breathcode</strong></p>
+                                <div class="row p-3 text-secondary">
+                                    <div class="col-1 text-center"><i class="far fa-heart"></i></div>
+                                    <div class="col-10">Comment...</div>
+                                    <div class="col-1 text-center"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="container-fluid py-5">
+                        <div class="card border-0">
+                                <div class="row p-3">
+                                    <div class="col-6">
+                                    <h5>My First Photo</h5>
+                                    </div>
+                                    <div class="col-6 text-right text-secondary">
+                                    12/4
+                                    </div>
+                                </div>
+                            <div class="card-body p-0">
+                                <div class="text-center">
+                                    <img src="https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries--500x500.jpg" class="img-fluid" alt="Fries">
+                                </div>
+                                <h5 class="card-title p-3">23 Likes</h5>
+                                <p class="card-text p-3">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#breathcode</strong></p>
+                                <div class="row p-3 text-secondary">
+                                    <div class="col-1 text-center"><i class="far fa-heart"></i></div>
+                                    <div class="col-10">Comment...</div>
+                                    <div class="col-1 text-center"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="container-fluid py-5">
+                        <div class="card border-0">
+                                <div class="row p-3">
+                                    <div class="col-6">
+                                    <h5>My First Photo</h5>
+                                    </div>
+                                    <div class="col-6 text-right text-secondary">
+                                    12/4
+                                    </div>
+                                </div>
+                            <div class="card-body p-0">
+                                <img src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/08/bananas-1354785_1920-1200x800.jpg" class="img-fluid" alt="Banana">
+                                <h5 class="card-title p-3">23 Likes</h5>
+                                <p class="card-text p-3">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#breathcode</strong></p>
+                                <div class="row p-3 text-secondary">
+                                    <div class="col-1 text-center"><i class="far fa-heart"></i></div>
+                                    <div class="col-10">Comment...</div>
+                                    <div class="col-1 text-center"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="container-fluid py-5">
+                        <div class="card">
+                                <div class="row p-3">
+                                    <div class="col-6">
+                                    <h5>My First Photo</h5>
+                                    </div>
+                                    <div class="col-6 text-right text-secondary">
+                                    12/4
+                                    </div>
+                                </div>
+                            <div class="card-body p-0 border-0">
+                                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/starry-night-sky-with-full-moon-arjun-c-mohan.jpg" class="img-fluid" alt="Moon">
+                                <h5 class="card-title p-3">23 Likes</h5>
+                                <p class="card-text p-3">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#breathcode</strong></p>
+                                <div class="row p-3 text-secondary">
+                                    <div class="col-1 text-center"><i class="far fa-heart"></i></div>
+                                    <div class="col-10">Comment...</div>
+                                    <div class="col-1 text-center"><i class="fas fa-ellipsis-v"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+<!-- Modal control for Create a new post button -->
+                <div class="modal fade" id="examplemodal" tabindex="-1" role="dialog" aria-labelledby="examplemodalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form>  
+                                    <div class="form-group">
+                                        <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-outline-secondary text-dark"><i class="fas fa-camera"></i></button>
+                                <button type="button" class="btn btn-outline-secondary text-dark"><i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+        
+        
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
